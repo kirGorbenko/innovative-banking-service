@@ -1,9 +1,13 @@
-import React from "react";
+import React, {type FC} from "react";
+import {Router} from "@routes/Router";
 
-const App = () => (
-  <div>
-    <h1>Hello, World!</h1>
-  </div>
+import "./fonts.css";
+import "./main.css";
+
+const App: FC = () => (
+  <>
+    <Router />
+  </>
 );
 
 export default App;
