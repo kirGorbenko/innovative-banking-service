@@ -1,7 +1,7 @@
 {
-  "name": "task",
-  "version": "1.0.0",
-  "description": "",
+  "name": "innovative-banking-service",
+  "version": "0.0.1",
+  "description": "Welcome to our innovative banking service project! Our project offers unique and cutting-edge features to enhance your financial experience.",
   "main": "index.js",
   "homepage": "https://github.com/kirGorbenko/innovative-banking-service.git",
   "repository": {
@@ -12,7 +12,7 @@
     "url": "https://github.com/kirGorbenko/innovative-banking-service.git"
   },
   "scripts": {
-    "tscheck": "tsc",
+    "tscheck": "tsc --skipLibCheck",
     "build": "webpack --config webpack.config.js --mode production",
     "start": "webpack serve --open",
     "lint": "eslint .",
@@ -20,12 +20,29 @@
     "prettier": "prettier --write ."
   },
   "keywords": [],
-  "author": "",
+  "homepage": "https://github.com/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/"
+  },
+  "bugs": {
+    "url": "https://github.com/"
+  },
+  "author": "Kiril Gorbenko",
   "license": "ISC",
+  "dependencies": {
+    "classnames": "2.5.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-redux": "8.1.3",
+    "react-router-dom": "6.21.3"
+  },
   "devDependencies": {
     "@babel/core": "7.23.9",
     "@babel/preset-env": "7.23.9",
     "@babel/preset-react": "7.23.3",
+    "@babel/preset-typescript": "7.23.3",
+    "@reduxjs/toolkit": "1.9.7",
     "@types/react": "18.2.48",
     "@types/react-dom": "18.2.18",
     "@typescript-eslint/eslint-plugin": "6.19.1",
@@ -42,15 +59,10 @@
     "file-loader": "6.2.0",
     "html-webpack-plugin": "5.6.0",
     "prettier": "3.2.4",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
     "style-loader": "3.3.4",
     "typescript": "5.3.3",
     "webpack": "5.90.0",
     "webpack-cli": "5.1.4",
     "webpack-dev-server": "4.15.1"
-  },
-  "dependencies": {
-    "@babel/preset-typescript": "^7.23.3"
   }
 }

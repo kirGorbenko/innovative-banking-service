@@ -16,6 +16,13 @@ module.exports = {
   resolve: {
     modules: [__dirname, "src", "node_modules"],
     extensions: ["*", ".js", ".jsx", ".tsx", ".ts"],
+    alias: {
+      "@routes": path.resolve(__dirname, "src/routes"),
+      "@pages": path.resolve(__dirname, "src/pages"),
+      "@components": path.resolve(__dirname, "src/components"),
+      "@assets": path.resolve(__dirname, "src/assets"),
+      "@redux": path.resolve(__dirname, "src/redux"),
+    },
   },
   module: {
     rules: [
@@ -33,6 +40,10 @@ module.exports = {
         test: /\.(png|svg|jpg|gif)$/,
         exclude: /node_modules/,
         use: ["file-loader"],
+      },
+      {
+        test: /\.(woff|woff2|ttf|eot)$/,
+        type: "asset/resource",
       },
     ],
   },
